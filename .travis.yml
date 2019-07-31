@@ -8,9 +8,8 @@ after_deploy:
 - echo "done deploying"
 deploy:
   provider: elasticbeanstalk
-  access_key_id:
-  secret_access_key:
-	secure: "klVbUtCewlB48ZcosadJgIgGD8oNLfyX0bc0tL0UUtDFPdXvd/WoffPVXMVZXDsYbFd860W/hTWvYkNKmI8eFJYJYrfRULExqUFMxXzENzO6zv/2Lr7zp2PrlK+0LJ01kTyjwcj6n+mFmjSd95tvRFo4a3F3ykJEf9jiUI++RWgQ3UPKaoekRPtwDbjxc8FNCkdExJMEx10ddHjxWakD2BM1oRfHcKo1gqDRoU2v5SHgK+kdAi35lIjRS4xBinjvzVujU4cQya/ySCF3xpu3UQqwtAp+NrUV06rQQinBlxeAVbty0/BjF60O0U9CQ27WUUPyiUlpRkTfEN6lnkfN2xqP4wT9S8f7H1OM9mH41WzNAuVIXqB3RnslaMnNXem5iVYVtFQTBk92ay2Je/scJKEb4O/noy2j5vxoo/dqaxuuVWNUUGeMqZsG1XsSk9681IruJCU4IqdcHdhkLu5H4OVfEFrpVZ/szN5/xJqxn6SmT2h1KldcAB6D4d+zmmA6kNLydSu9QxgBZtjuBE5OmFXhpKVWfvBXNLja83/715jIAxOQwku4iRXQWRPNy0b0AJdUgVm1bMPG3jrki0VqvNcUcSIAR5iyu0uTwWKBzS+Hyf5m50QcOTLgJXs3RUBWQH1T4LfeQSr+uk7KMtfSG2GUuTc+PigJYlW0Jk1CTDk="
+  access_key_id: $accesskey
+  secret_access_key: $secretkey
   region: eu-west-2
   app: travistest
   env: travistest-dev
