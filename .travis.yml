@@ -12,7 +12,7 @@ deploy:
   secret_access_key: $secretkey
   region: eu-west-2
   app: travistest
-  env: travistest-dev
+  env: travistest-stage
   bucket_name: travistest-eu-west-2-test
   on:
-    branch: master
+    branch: stage
