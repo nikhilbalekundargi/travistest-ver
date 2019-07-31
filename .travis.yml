@@ -1,24 +1,22 @@
 language: node_js
-
 node_js:
-  - "8"
-
+- '8'
 sudo: required
-
 services:
-  - docker
-
+- docker
 after_deploy:
-  - echo "done deploying"
-
-
+- echo "done deploying"
 deploy:
   provider: elasticbeanstalk
-  access_key_id: $ACCESSKEYID
-  secret_access_key: $ACCESSKEYSECRET
-  region: "eu-west-2"
-  app: "travistest"
-  env: "travistest-dev"
-  bucket_name: "travistest-eu-west-2-test"
+  access_key_id: "$ACCESSKEYID"
+  secret_access_key: "$ACCESSKEYSECRET"
+  region: eu-west-2
+  app: travistest
+  env: travistest-dev
+  bucket_name: travistest-eu-west-2-test
   on:
     branch: master
+env:
+  global:
+  - secure: MYF1iaQlKmr2JW0gycN4Zh2Y6uzJQ9OVeK4A4wO3TVXUByPKF7upXSjqP4FT98t27oBHMewPWD6UaKSVDtZ9lhZmv4H8l7OirQ/apjB02kIlk+WAvoiAJZlrod8gnfDFlcvNH1IltMH35RWh/pxSy4XPIMw9BLN6KlHdrSzFMeLYWM0tT11/86KpQSLejQ+ANApbuDuP86OeW45ifxiVcv3zPREhbXjN19F/R1x9dSN+oz7tE+U38P3ZFUm01l1oHdph0ljVoXHijcyv3S9duiiObDJSU6AHguub/aVzLTnWZETWRWXQfrVidrIBC0obm8dvNczL5Nkp5Eb98JoukIFWO6KHMoUNduxf80NGPq6hr2FRKflSAak1JSi7HxV+0kfitcO7ifjbMi72xQyDSSilzJG8s7fCAHh/rMOQ5nSkk15iKQkJ0c0HJGDBEAzUPzvSdPxxZoYSYH8mcDjPrcRac4XM/qvG5qXf7VT41W3aYFP+XPyg1tgGqUspeebjx382+aRga0hH4SL0xfQKCvqPZswcT9BvkdKZGQBzAQd0VEWow5wd+pzsB4hm9pQxUI7E0Qvg6j7jLgnUap5/BWdOk35HD+6EupMDViI1Uq58d8tlWcKTqHnS9ZFcEA4iGkxobfRKuMxZyg4XtzySelMIcKTnh0pV8b6W6mbpFoM=
+  - secure: A4ZQjzhA6M5XuyfP7tWN7zP1fbecKx+ukTeKuzGWH6UYyez+kH+3+PRbBgf8svblRb1qNh/Ab5KvS2IAiIvO5sQQmRL9dHF+GN+2GgKiXpnnCFC/ij13fN+XxZpPLVjQWuwmkzl/oJbxofwWNuLLM2kM8ID8BGCOzg1pwI0bZGpzUW1YNB9EpEwMt/oXdDYPaFKAgiCH3TY1kGZafRZ6W4XW6BuJJzKSF+WcVf8a7SZ9g7iVWw8alwf8Gjas8KbutbLbCUs1WOfDQnzOeA45kRlQD3MCthkkM5QsJFt6Bo8kLacxeTrDanx4oRvlBv/uwvcjK8UKKPwFJj+RcYEud6vaNQpyb44yb/W9WD0BtTLj+4cjCbVG9GuViNqsAUZGDsVGrzu0KCfsdiM1+gowiGouNh3N/eGuPjhN7OzRYABDxJsVDZWh/aMKxiN/4/e/xdwFXF/wT7N8WXv5W/Se4HF6hmhUOS2smRa6JAIUo2xX5udcmXOwQ0sTRkXyDu35uswo4qbKsxGJhPeDvYHO4OI15jjn3HZuxafjBXTb50g31rdrndqx69J5OpWZawaMyHQPTmMV/7R5GkF1aV7avKg3Clhi3IuM9Yvp2O6xskBz3lMwsmJriMUDN+f/AICn6J82Zhy9lEbHW6+3f055yRrclEf/SoftUVXquG19t/8=
