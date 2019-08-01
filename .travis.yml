@@ -12,7 +12,7 @@ deploy:
   secret_access_key: $secretkey
   region: $region
   app: $ebapp
-  env: $ebapp-version
+  env: $ebenv
   bucket_name: travistest-eu-west-2-test
   on:
-    branch: $branch
+   all_branches: true
