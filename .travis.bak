@@ -10,9 +10,9 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: $accesskey
   secret_access_key: $secretkey
-  region: $region
-  app: $ebapp
-  env: $ebapp-version
+  region: eu-west-2
+  app: travistest
+  env: travistest-stage
   bucket_name: travistest-eu-west-2-test
   on:
-    branch: $branch
+    branch: stage
