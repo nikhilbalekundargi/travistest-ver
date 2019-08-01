@@ -15,4 +15,6 @@ deploy:
   env: $ebapp-version
   bucket_name: travistest-eu-west-2-test
   on:
-    branch: $branch
+    branch: 
+	- master
+	  stage
