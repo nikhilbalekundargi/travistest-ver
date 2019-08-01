@@ -1,7 +1,9 @@
 branch-defaults:
   master:
-    environment: travistest-dev
+    environment: null
     group_suffix: null
+  stage:
+    environment: travistest-stage
 global:
   application_name: travistest
   branch: null
