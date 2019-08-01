@@ -16,5 +16,5 @@ deploy:
   bucket_name: travistest-eu-west-2-test
   on:
     branch: 
-	- master
-	  stage
+	master
+	stage
