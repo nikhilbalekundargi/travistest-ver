@@ -15,4 +15,4 @@ deploy:
   env: $ebenv
   bucket_name: travistest-eu-west-2-test
   on:
-   all_branches: true
+   branch: $branch
