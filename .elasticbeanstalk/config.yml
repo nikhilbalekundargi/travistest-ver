@@ -2,6 +2,8 @@ branch-defaults:
   master:
     environment: null
     group_suffix: null
+  release-1:
+    environment: travistest-ver
   stage:
     environment: null
 global:
